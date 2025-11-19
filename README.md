@@ -349,4 +349,4 @@ Built with [Loom](https://github.com/openfluke/loom) - Go neural network library
 
 ## License
 
-MIT
+Apache2
