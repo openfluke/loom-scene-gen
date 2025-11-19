@@ -1,0 +1,242 @@
+[
+  {
+    "type": "scene",
+    "background": 1710618,
+    "fog": {
+      "color": 1710618,
+      "near": 0.5,
+      "far": 150
+    },
+    "gravity": {
+      "type": "uniform",
+      "vector": [0, -9.81, 0]
+    },
+    "camera": {
+      "position": [10, 8, 10],
+      "lookAt": [0, 2, 0],
+      "orbitEnabled": true,
+      "orbitTarget": [0, 2, 0],
+      "fov": 60,
+      "near": 0.1,
+      "far": 1000
+    }
+  },
+  {
+    "type": "helper",
+    "helperType": "axes",
+    "size": 2.5,
+    "name": "Axes",
+    "layer": "helpers"
+  },
+  {
+    "type": "helper",
+    "helperType": "grid",
+    "size": 40,
+    "divisions": 40,
+    "colorCenterLine": 4473924,
+    "colorGrid": 3355443,
+    "name": "Grid",
+    "layer": "helpers"
+  },
+  {
+    "type": "light",
+    "lightType": "ambient",
+    "color": 8421504,
+    "intensity": 0.6,
+    "name": "Ambient",
+    "layer": "lights"
+  },
+  {
+    "type": "light",
+    "lightType": "directional",
+    "color": 16777215,
+    "intensity": 1.4,
+    "pos": [8, 12, 6],
+    "castShadow": true,
+    "name": "Sun",
+    "layer": "lights"
+  },
+  {
+    "type": "mesh",
+    "name": "Ground",
+    "layer": "main",
+    "shape": {
+      "type": "box",
+      "width": 60,
+      "height": 1,
+      "depth": 60
+    },
+    "material": {
+      "type": "standard",
+      "color": 2703946,
+      "metalness": 0.1,
+      "roughness": 0.9
+    },
+    "pos": [0, -0.5, 0],
+    "euler": [0, 0, 0],
+    "castShadow": false,
+    "receiveShadow": true,
+    "physics": {
+      "motionType": "static",
+      "friction": 0.6,
+      "restitution": 0.1
+    }
+  },
+  {
+    "type": "mesh",
+    "name": "Pyramid_Level_1",
+    "layer": "main",
+    "shape": {
+      "type": "box",
+      "width": 5,
+      "height": 0.5,
+      "depth": 5
+    },
+    "material": {
+      "type": "standard",
+      "color": 14134497,
+      "metalness": 0.05,
+      "roughness": 0.85
+    },
+    "pos": [0, 0.25, 0],
+    "euler": [0, 0, 0],
+    "castShadow": true,
+    "receiveShadow": true,
+    "physics": {
+      "motionType": "static",
+      "friction": 0.5,
+      "restitution": 0.1
+    }
+  },
+  {
+    "type": "mesh",
+    "name": "Pyramid_Level_2",
+    "layer": "main",
+    "shape": {
+      "type": "box",
+      "width": 4,
+      "height": 0.5,
+      "depth": 4
+    },
+    "material": {
+      "type": "standard",
+      "color": 14134497,
+      "metalness": 0.05,
+      "roughness": 0.85
+    },
+    "pos": [0, 0.75, 0],
+    "euler": [0, 0, 0],
+    "castShadow": true,
+    "receiveShadow": true,
+    "physics": {
+      "motionType": "static",
+      "friction": 0.5,
+      "restitution": 0.1
+    }
+  },
+  {
+    "type": "mesh",
+    "name": "Pyramid_Level_3",
+    "layer": "main",
+    "shape": {
+      "type": "box",
+      "width": 3,
+      "height": 0.5,
+      "depth": 3
+    },
+    "material": {
+      "type": "standard",
+      "color": 14134497,
+      "metalness": 0.05,
+      "roughness": 0.85
+    },
+    "pos": [0, 1.25, 0],
+    "euler": [0, 0, 0],
+    "castShadow": true,
+    "receiveShadow": true,
+    "physics": {
+      "motionType": "static",
+      "friction": 0.5,
+      "restitution": 0.1
+    }
+  },
+  {
+    "type": "mesh",
+    "name": "Pyramid_Level_4",
+    "layer": "main",
+    "shape": {
+      "type": "box",
+      "width": 2,
+      "height": 0.5,
+      "depth": 2
+    },
+    "material": {
+      "type": "standard",
+      "color": 14134497,
+      "metalness": 0.05,
+      "roughness": 0.85
+    },
+    "pos": [0, 1.75, 0],
+    "euler": [0, 0, 0],
+    "castShadow": true,
+    "receiveShadow": true,
+    "physics": {
+      "motionType": "static",
+      "friction": 0.5,
+      "restitution": 0.1
+    }
+  },
+  {
+    "type": "mesh",
+    "name": "Pyramid_Level_5",
+    "layer": "main",
+    "shape": {
+      "type": "box",
+      "width": 1,
+      "height": 0.5,
+      "depth": 1
+    },
+    "material": {
+      "type": "standard",
+      "color": 16766720,
+      "metalness": 0.3,
+      "roughness": 0.6
+    },
+    "pos": [0, 2.25, 0],
+    "euler": [0, 0, 0],
+    "castShadow": true,
+    "receiveShadow": true,
+    "physics": {
+      "motionType": "static",
+      "friction": 0.5,
+      "restitution": 0.1
+    }
+  },
+  {
+    "type": "mesh",
+    "name": "ball",
+    "layer": "main",
+    "shape": {
+      "type": "sphere",
+      "radius": 0.4,
+      "widthSegments": 32,
+      "heightSegments": 16
+    },
+    "material": {
+      "type": "standard",
+      "color": 16711680,
+      "metalness": 0.3,
+      "roughness": 0.5
+    },
+    "pos": [0, 5, 0],
+    "euler": [0, 0, 0],
+    "castShadow": true,
+    "receiveShadow": true,
+    "physics": {
+      "motionType": "dynamic",
+      "mass": 1,
+      "friction": 0.4,
+      "restitution": 0.5
+    }
+  }
+]

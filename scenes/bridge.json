@@ -1,0 +1,398 @@
+[
+  {
+    "type": "scene",
+    "background": 1710618,
+    "fog": {
+      "color": 1710618,
+      "near": 0.5,
+      "far": 150
+    },
+    "gravity": {
+      "type": "uniform",
+      "vector": [0, -9.81, 0]
+    },
+    "camera": {
+      "position": [10, 8, 12],
+      "lookAt": [0, 3, 0],
+      "orbitEnabled": true,
+      "orbitTarget": [0, 3, 0],
+      "fov": 60,
+      "near": 0.1,
+      "far": 1000
+    }
+  },
+  {
+    "type": "helper",
+    "helperType": "axes",
+    "size": 2.5,
+    "name": "Axes",
+    "layer": "helpers"
+  },
+  {
+    "type": "helper",
+    "helperType": "grid",
+    "size": 40,
+    "divisions": 40,
+    "colorCenterLine": 4473924,
+    "colorGrid": 3355443,
+    "name": "Grid",
+    "layer": "helpers"
+  },
+  {
+    "type": "light",
+    "lightType": "ambient",
+    "color": 8421504,
+    "intensity": 0.6,
+    "name": "Ambient",
+    "layer": "lights"
+  },
+  {
+    "type": "light",
+    "lightType": "directional",
+    "color": 16777215,
+    "intensity": 1.4,
+    "pos": [8, 12, 6],
+    "castShadow": true,
+    "name": "Sun",
+    "layer": "lights"
+  },
+  {
+    "type": "mesh",
+    "name": "Ground",
+    "layer": "main",
+    "shape": {
+      "type": "box",
+      "width": 60,
+      "height": 1,
+      "depth": 60
+    },
+    "material": {
+      "type": "standard",
+      "color": 2703946,
+      "metalness": 0.1,
+      "roughness": 0.9
+    },
+    "pos": [0, -0.5, 0],
+    "euler": [0, 0, 0],
+    "castShadow": false,
+    "receiveShadow": true,
+    "physics": {
+      "motionType": "static",
+      "friction": 0.6,
+      "restitution": 0.1
+    }
+  },
+  {
+    "type": "mesh",
+    "name": "Platform_Left",
+    "layer": "main",
+    "shape": {
+      "type": "box",
+      "width": 3,
+      "height": 3,
+      "depth": 3
+    },
+    "material": {
+      "type": "standard",
+      "color": 6710886,
+      "metalness": 0.1,
+      "roughness": 0.8
+    },
+    "pos": [-6, 1.5, 0],
+    "euler": [0, 0, 0],
+    "castShadow": true,
+    "receiveShadow": true,
+    "physics": {
+      "motionType": "static",
+      "friction": 0.5,
+      "restitution": 0.1
+    }
+  },
+  {
+    "type": "mesh",
+    "name": "Platform_Right",
+    "layer": "main",
+    "shape": {
+      "type": "box",
+      "width": 3,
+      "height": 3,
+      "depth": 3
+    },
+    "material": {
+      "type": "standard",
+      "color": 6710886,
+      "metalness": 0.1,
+      "roughness": 0.8
+    },
+    "pos": [6, 1.5, 0],
+    "euler": [0, 0, 0],
+    "castShadow": true,
+    "receiveShadow": true,
+    "physics": {
+      "motionType": "static",
+      "friction": 0.5,
+      "restitution": 0.1
+    }
+  },
+  {
+    "type": "mesh",
+    "name": "Bridge_Deck",
+    "layer": "main",
+    "shape": {
+      "type": "box",
+      "width": 12,
+      "height": 0.3,
+      "depth": 2
+    },
+    "material": {
+      "type": "standard",
+      "color": 8874117,
+      "metalness": 0.05,
+      "roughness": 0.7
+    },
+    "pos": [0, 3.15, 0],
+    "euler": [0, 0, 0],
+    "castShadow": true,
+    "receiveShadow": true,
+    "physics": {
+      "motionType": "static",
+      "friction": 0.5,
+      "restitution": 0.1
+    }
+  },
+  {
+    "type": "mesh",
+    "name": "Support_Left",
+    "layer": "main",
+    "shape": {
+      "type": "box",
+      "width": 0.3,
+      "height": 2,
+      "depth": 0.3
+    },
+    "material": {
+      "type": "standard",
+      "color": 5592405,
+      "metalness": 0.3,
+      "roughness": 0.6
+    },
+    "pos": [-3, 2.15, 0],
+    "euler": [0, 0, 0],
+    "castShadow": true,
+    "receiveShadow": true,
+    "physics": {
+      "motionType": "static",
+      "friction": 0.5,
+      "restitution": 0.1
+    }
+  },
+  {
+    "type": "mesh",
+    "name": "Support_Right",
+    "layer": "main",
+    "shape": {
+      "type": "box",
+      "width": 0.3,
+      "height": 2,
+      "depth": 0.3
+    },
+    "material": {
+      "type": "standard",
+      "color": 5592405,
+      "metalness": 0.3,
+      "roughness": 0.6
+    },
+    "pos": [3, 2.15, 0],
+    "euler": [0, 0, 0],
+    "castShadow": true,
+    "receiveShadow": true,
+    "physics": {
+      "motionType": "static",
+      "friction": 0.5,
+      "restitution": 0.1
+    }
+  },
+  {
+    "type": "mesh",
+    "name": "Rail_Left",
+    "layer": "main",
+    "shape": {
+      "type": "box",
+      "width": 12,
+      "height": 0.2,
+      "depth": 0.2
+    },
+    "material": {
+      "type": "standard",
+      "color": 8874117,
+      "metalness": 0.05,
+      "roughness": 0.7
+    },
+    "pos": [0, 3.8, 1],
+    "euler": [0, 0, 0],
+    "castShadow": true,
+    "receiveShadow": true,
+    "physics": {
+      "motionType": "static",
+      "friction": 0.5,
+      "restitution": 0.1
+    }
+  },
+  {
+    "type": "mesh",
+    "name": "Rail_Right",
+    "layer": "main",
+    "shape": {
+      "type": "box",
+      "width": 12,
+      "height": 0.2,
+      "depth": 0.2
+    },
+    "material": {
+      "type": "standard",
+      "color": 8874117,
+      "metalness": 0.05,
+      "roughness": 0.7
+    },
+    "pos": [0, 3.8, -1],
+    "euler": [0, 0, 0],
+    "castShadow": true,
+    "receiveShadow": true,
+    "physics": {
+      "motionType": "static",
+      "friction": 0.5,
+      "restitution": 0.1
+    }
+  },
+  {
+    "type": "mesh",
+    "name": "Post_1",
+    "layer": "main",
+    "shape": {
+      "type": "box",
+      "width": 0.15,
+      "height": 0.8,
+      "depth": 0.15
+    },
+    "material": {
+      "type": "standard",
+      "color": 8874117,
+      "metalness": 0.05,
+      "roughness": 0.7
+    },
+    "pos": [-5, 3.4, 1],
+    "euler": [0, 0, 0],
+    "castShadow": true,
+    "receiveShadow": true,
+    "physics": {
+      "motionType": "static",
+      "friction": 0.5,
+      "restitution": 0.1
+    }
+  },
+  {
+    "type": "mesh",
+    "name": "Post_2",
+    "layer": "main",
+    "shape": {
+      "type": "box",
+      "width": 0.15,
+      "height": 0.8,
+      "depth": 0.15
+    },
+    "material": {
+      "type": "standard",
+      "color": 8874117,
+      "metalness": 0.05,
+      "roughness": 0.7
+    },
+    "pos": [-5, 3.4, -1],
+    "euler": [0, 0, 0],
+    "castShadow": true,
+    "receiveShadow": true,
+    "physics": {
+      "motionType": "static",
+      "friction": 0.5,
+      "restitution": 0.1
+    }
+  },
+  {
+    "type": "mesh",
+    "name": "Post_3",
+    "layer": "main",
+    "shape": {
+      "type": "box",
+      "width": 0.15,
+      "height": 0.8,
+      "depth": 0.15
+    },
+    "material": {
+      "type": "standard",
+      "color": 8874117,
+      "metalness": 0.05,
+      "roughness": 0.7
+    },
+    "pos": [5, 3.4, 1],
+    "euler": [0, 0, 0],
+    "castShadow": true,
+    "receiveShadow": true,
+    "physics": {
+      "motionType": "static",
+      "friction": 0.5,
+      "restitution": 0.1
+    }
+  },
+  {
+    "type": "mesh",
+    "name": "Post_4",
+    "layer": "main",
+    "shape": {
+      "type": "box",
+      "width": 0.15,
+      "height": 0.8,
+      "depth": 0.15
+    },
+    "material": {
+      "type": "standard",
+      "color": 8874117,
+      "metalness": 0.05,
+      "roughness": 0.7
+    },
+    "pos": [5, 3.4, -1],
+    "euler": [0, 0, 0],
+    "castShadow": true,
+    "receiveShadow": true,
+    "physics": {
+      "motionType": "static",
+      "friction": 0.5,
+      "restitution": 0.1
+    }
+  },
+  {
+    "type": "mesh",
+    "name": "ball",
+    "layer": "main",
+    "shape": {
+      "type": "sphere",
+      "radius": 0.4,
+      "widthSegments": 32,
+      "heightSegments": 16
+    },
+    "material": {
+      "type": "standard",
+      "color": 16711680,
+      "metalness": 0.3,
+      "roughness": 0.5
+    },
+    "pos": [-5, 5, 0],
+    "euler": [0, 0, 0],
+    "castShadow": true,
+    "receiveShadow": true,
+    "physics": {
+      "motionType": "dynamic",
+      "mass": 1,
+      "friction": 0.4,
+      "restitution": 0.5
+    }
+  }
+]

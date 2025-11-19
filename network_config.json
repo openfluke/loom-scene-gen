@@ -1,0 +1,28 @@
+{
+  "id": "memorization_ultra_shallow",
+  "batch_size": 1,
+  "grid_rows": 1,
+  "grid_cols": 1,
+  "layers_per_cell": 3,
+  "seed": 42,
+  "layers": [
+    {
+      "type": "dense",
+      "activation": "leaky_relu",
+      "input_size": 22,
+      "output_size": 512
+    },
+    {
+      "type": "dense",
+      "activation": "leaky_relu",
+      "input_size": 512,
+      "output_size": 128
+    },
+    {
+      "type": "dense",
+      "activation": "linear",
+      "input_size": 128,
+      "output_size": 9
+    }
+  ]
+}

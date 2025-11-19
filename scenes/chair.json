@@ -1,0 +1,241 @@
+[
+  {
+    "type": "scene",
+    "background": 1710618,
+    "fog": {
+      "color": 1710618,
+      "near": 0.5,
+      "far": 150
+    },
+    "gravity": {
+      "type": "uniform",
+      "vector": [0, -9.81, 0]
+    },
+    "camera": {
+      "position": [6, 6, 8],
+      "lookAt": [0, 1, 0],
+      "orbitEnabled": true,
+      "orbitTarget": [0, 1, 0],
+      "fov": 60,
+      "near": 0.1,
+      "far": 1000
+    }
+  },
+  {
+    "type": "helper",
+    "helperType": "axes",
+    "size": 2.5,
+    "name": "Axes",
+    "layer": "helpers"
+  },
+  {
+    "type": "helper",
+    "helperType": "grid",
+    "size": 40,
+    "divisions": 40,
+    "colorCenterLine": 4473924,
+    "colorGrid": 3355443,
+    "name": "Grid",
+    "layer": "helpers"
+  },
+  {
+    "type": "light",
+    "lightType": "ambient",
+    "color": 8421504,
+    "intensity": 0.6,
+    "name": "Ambient",
+    "layer": "lights"
+  },
+  {
+    "type": "light",
+    "lightType": "directional",
+    "color": 16777215,
+    "intensity": 1.4,
+    "pos": [8, 12, 6],
+    "castShadow": true,
+    "name": "Sun",
+    "layer": "lights"
+  },
+  {
+    "type": "mesh",
+    "name": "Ground",
+    "layer": "main",
+    "shape": {
+      "type": "box",
+      "width": 60,
+      "height": 1,
+      "depth": 60
+    },
+    "material": {
+      "type": "standard",
+      "color": 2703946,
+      "metalness": 0.1,
+      "roughness": 0.9
+    },
+    "pos": [0, -0.5, 0],
+    "euler": [0, 0, 0],
+    "castShadow": false,
+    "receiveShadow": true,
+    "physics": {
+      "motionType": "static",
+      "friction": 0.6,
+      "restitution": 0.1
+    }
+  },
+  {
+    "type": "mesh",
+    "name": "Chair_Seat",
+    "layer": "main",
+    "shape": {
+      "type": "box",
+      "width": 2,
+      "height": 0.2,
+      "depth": 2
+    },
+    "material": {
+      "type": "standard",
+      "color": 9127187,
+      "metalness": 0.1,
+      "roughness": 0.7
+    },
+    "pos": [-3, 1.5, 0],
+    "euler": [0, 0, 0],
+    "castShadow": true,
+    "receiveShadow": true,
+    "physics": {
+      "motionType": "static",
+      "friction": 0.5,
+      "restitution": 0.1
+    }
+  },
+  {
+    "type": "mesh",
+    "name": "Chair_Leg_FL",
+    "layer": "main",
+    "shape": {
+      "type": "box",
+      "width": 0.2,
+      "height": 1.5,
+      "depth": 0.2
+    },
+    "material": {
+      "type": "standard",
+      "color": 9127187,
+      "metalness": 0.1,
+      "roughness": 0.7
+    },
+    "pos": [-3.8, 0.75, 0.8],
+    "euler": [0, 0, 0],
+    "castShadow": true,
+    "receiveShadow": true,
+    "physics": {
+      "motionType": "static",
+      "friction": 0.5,
+      "restitution": 0.1
+    }
+  },
+  {
+    "type": "mesh",
+    "name": "Chair_Leg_FR",
+    "layer": "main",
+    "shape": {
+      "type": "box",
+      "width": 0.2,
+      "height": 1.5,
+      "depth": 0.2
+    },
+    "material": {
+      "type": "standard",
+      "color": 9127187,
+      "metalness": 0.1,
+      "roughness": 0.7
+    },
+    "pos": [-3.8, 0.75, -0.8],
+    "euler": [0, 0, 0],
+    "castShadow": true,
+    "receiveShadow": true,
+    "physics": {
+      "motionType": "static",
+      "friction": 0.5,
+      "restitution": 0.1
+    }
+  },
+  {
+    "type": "mesh",
+    "name": "Chair_Leg_BL",
+    "layer": "main",
+    "shape": {
+      "type": "box",
+      "width": 0.2,
+      "height": 1.5,
+      "depth": 0.2
+    },
+    "material": {
+      "type": "standard",
+      "color": 9127187,
+      "metalness": 0.1,
+      "roughness": 0.7
+    },
+    "pos": [-2.2, 0.75, 0.8],
+    "euler": [0, 0, 0],
+    "castShadow": true,
+    "receiveShadow": true,
+    "physics": {
+      "motionType": "static",
+      "friction": 0.5,
+      "restitution": 0.1
+    }
+  },
+  {
+    "type": "mesh",
+    "name": "Chair_Leg_BR",
+    "layer": "main",
+    "shape": {
+      "type": "box",
+      "width": 0.2,
+      "height": 1.5,
+      "depth": 0.2
+    },
+    "material": {
+      "type": "standard",
+      "color": 9127187,
+      "metalness": 0.1,
+      "roughness": 0.7
+    },
+    "pos": [-2.2, 0.75, -0.8],
+    "euler": [0, 0, 0],
+    "castShadow": true,
+    "receiveShadow": true,
+    "physics": {
+      "motionType": "static",
+      "friction": 0.5,
+      "restitution": 0.1
+    }
+  },
+  {
+    "type": "mesh",
+    "name": "Chair_Back",
+    "layer": "main",
+    "shape": {
+      "type": "box",
+      "width": 2,
+      "height": 2,
+      "depth": 0.2
+    },
+    "material": {
+      "type": "standard",
+      "color": 9127187,
+      "metalness": 0.1,
+      "roughness": 0.7
+    },
+    "pos": [-3, 2.6, 0.9],
+    "euler": [0, 0, 0],
+    "castShadow": true,
+    "receiveShadow": true,
+    "physics": {
+      "motionType": "static",
+      "friction": 0.5,
+      "restitution": 0.1
+    }
+  }
+]
