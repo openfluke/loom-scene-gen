@@ -1,28 +1,31 @@
 {
-  "id": "memorization_ultra_shallow",
+  "id": "scene_generator",
   "batch_size": 1,
   "grid_rows": 1,
-  "grid_cols": 1,
-  "layers_per_cell": 3,
-  "seed": 42,
+  "grid_cols": 3,
+  "layers_per_cell": 1,
   "layers": [
     {
       "type": "dense",
-      "activation": "leaky_relu",
+      "id": "encoder",
       "input_size": 22,
-      "output_size": 512
+      "output_size": 64,
+      "activation": "tanh"
+    },
+    {
+      "type": "lstm",
+      "id": "memory",
+      "input_size": 64,
+      "hidden_size": 64,
+      "seq_length": 1,
+      "activation": "tanh"
     },
     {
       "type": "dense",
-      "activation": "leaky_relu",
-      "input_size": 512,
-      "output_size": 128
-    },
-    {
-      "type": "dense",
-      "activation": "linear",
-      "input_size": 128,
-      "output_size": 9
+      "id": "output_head",
+      "input_size": 64,
+      "output_size": 9,
+      "activation": "linear"
     }
   ]
 }
